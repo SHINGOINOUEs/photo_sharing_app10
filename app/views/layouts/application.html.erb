@@ -11,6 +11,11 @@
   </head>
 
   <body>
+  <div id="container">
+  <header>
+  <%= render "shared/header"%>
+  <header>
+
   <% flash.each do |key, value| %>
     <%= content_tag(:div, value, class: "#{key}") %>
   <% end %>
@@ -26,6 +31,14 @@
 <%= link_to "Login", new_session_path %>
 <% end %>
 
+　　
+    <main>
     <%= yield %>
+    </main>
+
+    <footer>
+    <%= render "shared/footer"%>
+    </footer>   
+
   </body>
 </html>
