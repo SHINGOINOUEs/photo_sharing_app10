@@ -62,3 +62,10 @@ gem 'rexml'
 group :development do
   gem 'letter_opener_web'
 end
+
+gem 'letter_opener_web'
+
+gem 'net-smtp'
+gem 'net-imap'
+gem 'net-pop'
+
